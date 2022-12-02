@@ -66,23 +66,23 @@ module.exports = {
                 "dbPort": 53603,
                 "dbName": "postgres"
             },
-    chrome: {
-      desiredCapabilities: {
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-          //
-          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          w3c: true,
-          args: [
-            //'--no-sandbox',
-            //'--ignore-certificate-errors',
-            //'--allow-insecure-localhost',
-            //'--headless'
-          ]
-        }
-      },
-
+   chrome: {
+    desiredCapabilities : {
+    browserName : 'chrome',
+    'goog:chromeOptions' : {
+        // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+        //
+        // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+        w3c: true,
+        args: [
+        '--no-sandbox',
+        '--disable-dev-shm-usage'
+        //'--ignore-certificate-errors',
+        //'--allow-insecure-localhost',
+        //'--headless'
+        ]
+    }
+},
       webdriver: {
         start_process: true,
         server_path: '',
