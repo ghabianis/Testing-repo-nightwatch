@@ -1,0 +1,44 @@
+# This file is a template, and might need editing before it works on your project.
+# You can copy and paste this template into a new `.gitlab-ci.yml` file.
+# You should not add this template to an existing `.gitlab-ci.yml` file by using the `include:` keyword.
+#
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Nodejs.gitlab-ci.yml
+
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:14.19.0
+
+cache:
+  paths:
+    - node_modules/
+
+test_async:
+  before_script:
+    - apt-get update -q -y
+    - apt-get --yes install xvfb
+  script:
+    # Installing Google Chrome
+    - curl -sS -L https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
+    - apt-get update -q -y
+    - apt-get install -y google-chrome-stable
+    # Installing chromedriver
+    - npm install chromedriver
+
+    # Installing Geckodriver
+    - npm install geckodriver
+
+    # installing all the packages
+    - npm install 
+    # Ensuring everything is installed
+    - ./node_modules/.bin/chromedriver --version
+    - ./node_modules/.bin/nightwatch --version
+    - /usr/bin/google-chrome --version
+    # Install display manager
+    - Xvfb -ac :99 -screen 0 1280x1024x16 &
+    - export DISPLAY=:99
+    # Run nightwatch tests
+    - npx nightwatch tests/ecosia.js --env chrome
