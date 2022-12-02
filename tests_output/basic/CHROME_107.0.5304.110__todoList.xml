@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="basic.todoList"
+    errors="0" failures="0" hostname="" id="" package="basic" skipped="0"
+    tests="1" time="0.5360" timestamp="">
+  
+    <testcase name="should add a todo using global element()" classname="basic.todoList" time="0.5360" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/dell/Documents/Testing/nightwatch/examples/ret-login2.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |   .click(&#34;#app &gt; div &gt; div &gt; div.w-lg-500px.mb-10.mb-lg-3.mx-auto.d-flex.flex-column &gt; div &gt; div &gt; div &gt; div.d-grid &gt; button &gt; span&#34;)
+     10 |   .click(&#34;#app &gt; form &gt; div &gt; div:nth-child(8) &gt; div &gt; div &gt; div &gt; button &gt; span&#34;)
+     11 |   .click(&#34;#app &gt; form &gt; div &gt; div &gt; div.gap-5.mt-4.d-flex.align-items-center.justify-content-center.w-100.mw-375px.p-3 &gt; div&#34;) 
+     12 |  .click(&#34;#app &gt; form &gt; div &gt; div &gt; div.gap-5.mt-4.d-flex.align-items-center.justify-content-center.w-100.mw-375px.p-3 &gt; div &gt; div &gt; div &gt; button &gt; span&#34;)
+     13 |   .click(&#34;#app &gt; form &gt; div &gt; div.d-flex.gap-5.mw-375px.w-100.mb-3 &gt; div &gt; div &gt; div &gt; button&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/dell/Documents/Testing/nightwatch/examples/ret-login2.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     10 |   .click(&#34;#app &gt; form &gt; div &gt; div:nth-child(8) &gt; div &gt; div &gt; div &gt; button &gt; span&#34;)
+     11 |   .click(&#34;#app &gt; form &gt; div &gt; div &gt; div.gap-5.mt-4.d-flex.align-items-center.justify-content-center.w-100.mw-375px.p-3 &gt; div&#34;)
+     12 |  .click(&#34;#app &gt; form &gt; div &gt; div &gt; div.gap-5.mt-4.d-flex.align-items-center.justify-content-center.w-100.mw-375px.p-3 &gt; div &gt; div &gt; div &gt; button &gt; span&#34;) 
+     13 |   .click(&#34;#app &gt; form &gt; div &gt; div.d-flex.gap-5.mw-375px.w-100.mb-3 &gt; div &gt; div &gt; div &gt; button&#34;)
+     14 |   .end();
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/dell/Documents/Testing/nightwatch/examples/ret-login2.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     11 |   .click(&#34;#app &gt; form &gt; div &gt; div &gt; div.gap-5.mt-4.d-flex.align-items-center.justify-content-center.w-100.mw-375px.p-3 &gt; div&#34;)
+     12 |  .click(&#34;#app &gt; form &gt; div &gt; div &gt; div.gap-5.mt-4.d-flex.align-items-center.justify-content-center.w-100.mw-375px.p-3 &gt; div &gt; div &gt; div &gt; button &gt; span&#34;)
+     13 |   .click(&#34;#app &gt; form &gt; div &gt; div.d-flex.gap-5.mw-375px.w-100.mb-3 &gt; div &gt; div &gt; div &gt; button&#34;) 
+     14 |   .end();
+     15 |   });
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="examples.ret-login-firstpage (copy)"
+    errors="0" failures="0" hostname="" id="" package="ret-login-firstpage (copy)" skipped="0"
+    tests="1" time="0.1640" timestamp="">
+  
+    <testcase name="first input should be an email" classname="examples.ret-login-firstpage (copy)" time="0.1640" assertions="0">
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
